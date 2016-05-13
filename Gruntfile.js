@@ -1,5 +1,5 @@
 var remoteBranch = 'gh-pages';
-var remoteRepo = 'git@github.com:t3kit/felayout_t3kit_new.git';
+var remoteRepo = 'git@github.com:t3kit/felayout_bluemountain.git';
 module.exports = function(grunt) {
     require('time-grunt')(grunt);
     require('load-grunt-config')(grunt, {
