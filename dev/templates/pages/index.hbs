@@ -1,0 +1,740 @@
+---
+#layout: default.hbs #by default it is default.hbs, but you can specify another one
+title: Home #title in menu
+position: 1 #position in menu
+hideInMenu: false #if true, will be hidden in menu
+hideInBreadcrumbs: false #if true, will be hidden in breadcrumbs
+externalLink: false #just add link (http://link.com) instead of "false" to use this page like a link to external page.
+---
+
+<div class="top-content">
+    {{>slider}}
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            {{ renderContent 'iconTextButton'
+                headerLeftIcon="access_time"
+                header="Content element 1"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=false
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'iconTextButton'
+                headerLeftIcon="settings"
+                header="Content element 1 Lorem ipsum dolor"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=false
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'iconTextButton'
+                headerLeftIcon="school"
+                header="Content element 1"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=false
+            }}
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container">
+    {{>divider}}
+</div> -->
+
+
+<div class="blue-mountain-wrp">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                {{ renderContent 'iconTextButton'
+                    headerLeftIcon="access_time"
+                    header="Content element 1"
+                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                    buttonName="Read more"
+                    btn=true
+                }}
+            </div>
+            <div class="col-md-4">
+                {{ renderContent 'iconTextButton'
+                    headerLeftIcon="settings"
+                    header="Content element 1 Lorem ipsum dolor"
+                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                    buttonName="Read more"
+                    btn=true
+                }}
+            </div>
+            <div class="col-md-4">
+                {{ renderContent 'iconTextButton'
+                    headerLeftIcon="school"
+                    header="Content element 1"
+                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                    buttonName="Read more"
+                    btn=true
+                }}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            {{ renderContent 'imageTextLink'
+                imgSrc="images/spot_image1.jpg"
+                imgLink=false
+                header="Promo Image, text & link"
+                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
+                linkName="Lorem Ipsum Dolor"
+                btn=true
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'imageTextLink'
+                imgSrc="images/spot_image2.jpg"
+                imgLink=false
+                header="Promo Image, text & link"
+                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
+                linkName="Lorem Ipsum Dolor"
+                btn=true
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'imageTextLink'
+                imgSrc="images/spot_image3.jpg"
+                imgLink=false
+                header="Promo Image, text & link"
+                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
+                linkName="Lorem Ipsum Dolor"
+                btn=true
+            }}
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    {{>divider}}
+</div>
+
+
+
+
+
+
+<!-- <a class="full-width-image__btn btn btn-default" title="" href="#">Lorem ipsum dolor</a> -->
+
+<div class="parallax" data-stellar-background-ratio="0.5" style="background-image: url('images/parallax_image.jpg'); height:450px;">
+
+<div class="inverse">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            {{ renderContent 'bigIconTextButton'
+                bigTopIcon="now_widgets"
+                header="Content element 1"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=true
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'bigIconTextButton'
+                bigTopIcon="devices"
+                header="Content element 1"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=true
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'bigIconTextButton'
+                bigTopIcon="equalizer"
+                header="Content element 1"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=true
+            }}
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="gray-background">
+        <div class="container mosaic-gray-even">
+            <div class="row">
+                <div class="col-md-4">
+                    {{ renderContent 'iconTextButton'
+                        class=""
+                        headerLeftIcon="access_time"
+                        header="Content element 1"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                        buttonName="Read more"
+                    }}
+                </div>
+                <div class="col-md-4">
+                    {{ renderContent 'iconTextButton'
+                        class=""
+                        headerLeftIcon="settings"
+                        header="Content element 1"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                        buttonName="Read more"
+                    }}
+                </div>
+                <div class="col-md-4">
+                    {{ renderContent 'iconTextButton'
+                        class=""
+                        headerLeftIcon="school"
+                        header="Content element 1"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                        buttonName="Read more"
+                    }}
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="gray-background">
+        <div class="container mosaic-gray-odd">
+            <div class="row">
+                <div class="col-md-4">
+                    {{ renderContent 'iconTextButton'
+                        class=""
+                        headerLeftIcon="access_time"
+                        header="Content element 1"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                        buttonName="Read more"
+                    }}
+                </div>
+                <div class="col-md-4">
+                    {{ renderContent 'iconTextButton'
+                        class=""
+                        headerLeftIcon="settings"
+                        header="Content element 1"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                        buttonName="Read more"
+                    }}
+                </div>
+                <div class="col-md-4">
+                    {{ renderContent 'iconTextButton'
+                        class=""
+                        headerLeftIcon="school"
+                        header="Content element 1"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                        buttonName="Read more"
+                    }}
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+
+<div class="gray-background">
+        <div class="container mosaic-blue-mountain-odd">
+            <div class="row">
+                <div class="col-md-4">
+                    {{ renderContent 'iconTextButton'
+                        class=""
+                        headerLeftIcon="access_time"
+                        header="Content element 1"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                        buttonName="Read more"
+                    }}
+                </div>
+                <div class="col-md-4">
+                    {{ renderContent 'iconTextButton'
+                        class=""
+                        headerLeftIcon="settings"
+                        header="Content element 1"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                        buttonName="Read more"
+                    }}
+                </div>
+                <div class="col-md-4">
+                    {{ renderContent 'iconTextButton'
+                        class=""
+                        headerLeftIcon="school"
+                        header="Content element 1"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                        buttonName="Read more"
+                    }}
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="gray-background">
+    <div class="container mosaic-blue-mountain-even">
+        <div class="row">
+            <div class="col-md-4">
+                {{ renderContent 'iconTextButton'
+                    class=""
+                    headerLeftIcon="access_time"
+                    header="Content element 1"
+                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                    buttonName="Read more"
+                }}
+            </div>
+            <div class="col-md-4">
+                <div class="inverse">
+                {{ renderContent 'iconTextButton'
+                    class=""
+                    headerLeftIcon="settings"
+                    header="Content element 1"
+                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                    buttonName="Read more"
+                }}
+                </div>
+            </div>
+            <div class="col-md-4">
+                {{ renderContent 'iconTextButton'
+                    class=""
+                    headerLeftIcon="school"
+                    header="Content element 1"
+                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                    buttonName="Read more"
+                }}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--
+
+
+
+<div class="gray-background">
+        <div id="c180" class="container mosaic mosaic-gray">
+            <div class="row">
+                <div class="col1  col-md-4">
+                    <div id="c181" class="">
+
+                        <div class="icon-text-btn">
+                            <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon</h3>
+                            <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2  col-md-4">
+                        <div id="c182" class="">
+                            <div class="icon-text-btn">
+                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 1)</h3>
+                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col3  col-md-4">
+                        <div id="c183" class="">
+                            <div class="icon-text-btn">
+                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 2)</h3>
+                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="c180" class="container mosaic mosaic-gray">
+                <div class="row">
+                    <div class="col1  col-md-4">
+                        <div id="c181" class="">
+                            <div class="icon-text-btn">
+                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon</h3>
+                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2  col-md-4">
+                        <div id="c182" class="">
+                            <div class="icon-text-btn">
+                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 1)</h3>
+                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col3  col-md-4">
+                        <div id="c183" class="">
+                            <div class="icon-text-btn">
+                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 2)</h3>
+                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="c182" class="container mosaic mosaic-blue">
+                <div class="row">
+                    <div class="col1  col-md-4">
+                        <div id="c181" class="icon-right">
+                            <div class="icon-text-btn">
+                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon</h3>
+                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2  col-md-4">
+                        <div id="c182" class="icon-right">
+                            <div class="icon-text-btn">
+                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 1)</h3>
+                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col3  col-md-4">
+                        <div id="c183" class="icon-right">
+                            <div class="icon-text-btn">
+                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 2)</h3>
+                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="c181" class="container mosaic mosaic-blue">
+                <div class="row">
+                    <div class="col1  col-md-4">
+                        <div id="c184" class="">
+                            <div class="icon-text-btn">
+                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon</h3>
+                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2  col-md-4">
+                        <div id="c185" class="">
+                            <div class="icon-text-btn">
+                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 1)</h3>
+                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col3  col-md-4">
+                        <div id="c186" class="">
+                            <div class="icon-text-btn">
+                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 2)</h3>
+                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div> -->
+
+<div class="blue-mountain-wrp">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                {{ renderContent 'bigIconTextButton'
+                    bigTopIcon="now_widgets"
+                    header="Content element 1"
+                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                    buttonName="Read more"
+                    btn=false
+                }}
+            </div>
+            <div class="col-md-4">
+                {{ renderContent 'bigIconTextButton'
+                    bigTopIcon="devices"
+                    header="Content element 1"
+                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                    buttonName="Read more"
+                    btn=false
+                }}
+            </div>
+            <div class="col-md-4">
+                {{ renderContent 'bigIconTextButton'
+                    bigTopIcon="equalizer"
+                    header="Content element 1"
+                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                    buttonName="Read more"
+                    btn=false
+                }}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="parallax" data-stellar-background-ratio="0.5" style="background-image: url('images/parallax_image.jpg'); height:400px;">
+    <div class="saturated-inverse">
+    <div id="c177" class="container ">
+        <div class="row">
+            <div class="col1  col-md-8 one-column-align-center">
+                <div class="blue-mountaih-header margin-top-70">
+                <div id="c178" class=" text-center">
+                    <header>
+                        <h2>Lorem ipsum dolor sit amet markum set</h2>
+                        <h3>Full width section with text, link and parallax background image</h3>
+                    </header>
+                </div>
+                </div>
+                <div id="c179" class=" ">
+                    <hr class="ce-div">
+                </div>
+                <div id="c180" class=" text-center">
+                    <div class="ce-textpic ce-right ce-intext">
+                        <div class="ce-bodytext">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" margin-top-10 ">
+                    <div id="c181" class="text-center">
+                        <a href="/" class="btn btn-default">LOREM IPSUM DOLOR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<div class="container mosaic-blue-mountain-odd">
+    <div class="row">
+        <div class="col-md-4">
+            {{ renderContent 'bigIconTextButton'
+                bigTopIcon="now_widgets"
+                header="Content element 1"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=true
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'bigIconTextButton'
+                bigTopIcon="devices"
+                header="Content element 1"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=true
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'bigIconTextButton'
+                bigTopIcon="equalizer"
+                header="Content element 1"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=true
+            }}
+        </div>
+    </div>
+</div>
+
+<div class="col-bg-img" style="background-image: url('images/bottom-image.jpg')">
+    <div class="inverse ">
+    <div id="c181" class="container ">
+        <div class="row">
+            <div class="col1  col-md-8 one-column-align-center">
+                <div class="blue-mountaih-header">
+                    <div id="c183" class="text-center ">
+                        <h2>Lorem ipsum dolor sit amet markum</h2>
+                    </div>
+                </div>
+                <div id="c183" class="text-center">
+                    <div class="ce-textpic ce-right ce-intext">
+                        <div class="ce-bodytext">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<div class="blue-mountain-wrp">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            {{ renderContent 'imageTextLink'
+                imgSrc="images/spot_image1.jpg"
+                imgLink="#"
+                header="Promo Image, text & link"
+                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
+                linkName="Lorem Ipsum Dolor"
+                btn=true
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'imageTextLink'
+                imgSrc="images/spot_image2.jpg"
+                imgLink="#"
+                header="Promo Image, text & link"
+                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
+                linkName="Lorem Ipsum Dolor"
+                btn=true
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'imageTextLink'
+                imgSrc="images/spot_image3.jpg"
+                imgLink="#"
+                header="Promo Image, text & link"
+                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
+                linkName="Lorem Ipsum Dolor"
+                btn=true
+            }}
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            {{ renderContent 'bigIconTextButton'
+                bigTopIcon="now_widgets"
+                header="Content element 1"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=true
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'bigIconTextButton'
+                bigTopIcon="devices"
+                header="Content element 1"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=true
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'bigIconTextButton'
+                bigTopIcon="equalizer"
+                header="Content element 1"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=true
+            }}
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            {{ renderContent 'iconTextButton'
+                headerLeftIcon="access_time"
+                header="Content element 1"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=false
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'iconTextButton'
+                headerLeftIcon="settings"
+                header="Content element 1 Lorem ipsum dolor"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=false
+            }}
+        </div>
+        <div class="col-md-4">
+            {{ renderContent 'iconTextButton'
+                headerLeftIcon="school"
+                header="Content element 1"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                buttonName="Read more"
+                btn=false
+            }}
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+        {{ renderContent 'quote'
+                text="Top service. It’s nice to come back. Thank you for the support, efficient and fast. You are true professionals"
+                name="John Doe"
+                title="VP of Marketing"
+                linkText="Royal Trader"
+            }}
+        </div>
+        <div class="col-md-6">
+            {{ renderContent 'quote'
+                    text="Top service. It’s nice to come back. Thank you for the support, efficient and fast. You are true professionals"
+                    name="John Doe"
+                    title="VP of Marketing"
+                    linkText="Royal Trader"
+            }}
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {{>divider}}
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class=" margin-top-30 margin-bottom-50">
+                {{>logoCarousel}}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="parallax" data-stellar-background-ratio="0.5" style="background-image: url('images/parallax_image.jpg'); height:130px;">
+    <div class="saturated-inverse ">
+    <div id="c182" class="container ">
+        <div class="row">
+            <div class="col1  col-md-7 col-md-offset-1">
+                <div class="blue-mountaih-header ">
+                <div id="c183" class=" ">
+                    <h2>Lorem ipsum dolor sit amet markum</h2>
+                </div>
+                </div>
+                <div id="c183" class=" ">
+                    <h4>Full width section with text, link and parallax background image</h4>
+                </div>
+            </div>
+            <div class="col2 col-md-3">
+                <div class=" margin-top-50">
+                <div id="c184" class="text-center">
+                    <a href="/" class="btn btn-default">Lorem ipsum dolor</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
