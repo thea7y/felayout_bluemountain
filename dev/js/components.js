@@ -1,0 +1,35 @@
+// Components
+
+// Swiper
+//==============================================================================
+@import "../bower_components/swiper/dist/js/swiper.jquery.js";
+//==============================================================================
+
+
+// Jquery dot dot dot
+//==============================================================================
+// @import '../bower_components/jQuery.dotdotdot/src/js/jquery.dotdotdot.js';
+//==============================================================================
+
+
+// Ultra lightweight, usable, beautiful autocomplete with zero dependencies.
+// http://leaverou.github.io/awesomplete/
+//==============================================================================
+@import '../bower_components/awesomplete/awesomplete.js';
+//==============================================================================
+
+
+// Simplelightbox
+// Touch-friendly image lightbox for mobile and desktop with jQuery
+// https://github.com/andreknieriem/simplelightbox
+//==============================================================================
+@import '../bower_components/simplelightbox/dist/simple-lightbox.js';
+//==============================================================================
+
+
+// Parallax
+// parallax scrolling effects
+// http://markdalgleish.com/projects/stellar.js
+//==============================================================================
+@import '../bower_components/jquery.stellar/jquery.stellar.js';
+//==============================================================================
