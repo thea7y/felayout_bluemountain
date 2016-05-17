@@ -19,16 +19,16 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=false
+                btnAsLink=true
             }}
         </div>
         <div class="col-md-4">
             {{ renderContent 'iconTextButton'
                 headerLeftIcon="settings"
-                header="Content element 1 Lorem ipsum dolor"
+                header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=false
+                btnAsLink=true
             }}
         </div>
         <div class="col-md-4">
@@ -37,15 +37,11 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=false
+                btnAsLink=true
             }}
         </div>
     </div>
 </div>
-
-<!-- <div class="container">
-    {{>divider}}
-</div> -->
 
 
 <div class="blue-mountain-wrp">
@@ -57,16 +53,16 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                     header="Content element 1"
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                     buttonName="Read more"
-                    btn=true
+                    btnAsLink=false
                 }}
             </div>
             <div class="col-md-4">
                 {{ renderContent 'iconTextButton'
                     headerLeftIcon="settings"
-                    header="Content element 1 Lorem ipsum dolor"
+                    header="Content element 1"
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                     buttonName="Read more"
-                    btn=true
+                    btnAsLink=false
                 }}
             </div>
             <div class="col-md-4">
@@ -75,13 +71,55 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                     header="Content element 1"
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                     buttonName="Read more"
-                    btn=true
+                    btnAsLink=false
                 }}
             </div>
         </div>
     </div>
 </div>
 
+<div class="parallax parallax-video" data-jarallax-video="https://www.youtube.com/watch?v=ab0TSkLe-E0" style=" background-image: url('images/temp-carousel-3.jpg'); height:auto;">
+    <div class="inverse">
+    <div id="c181" class="container ">
+            <div class="row">
+            <div class="col1  col-md-8 one-column-align-center">
+                <div class="blue-mountaih-header">
+                    <div id="c183" class="text-center margin-top-50">
+                        <h2>Lorem ipsum dolor sit amet markum</h2>
+                    </div>
+                </div>
+                <div id="c183" class="text-center">
+                    <div class="ce-textpic ce-right ce-intext">
+                        <div class="ce-bodytext">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-6">
+                {{ renderContent 'bigIconTextButton'
+                    bigTopIcon="equalizer"
+                    header="Content element 1"
+                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                    buttonName="Read more"
+                    btnAsLink=false
+                }}
+            </div>
+            <div class="col-md-6">
+                {{ renderContent 'bigIconTextButton'
+                    bigTopIcon="now_widgets"
+                    header="Content element 1"
+                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
+                    buttonName="Read more"
+                    btnAsLink=false
+                }}
+            </div>
+            </div>
+    </div>
+    </div>
+</div>
 
 <div class="container">
     <div class="row">
@@ -92,7 +130,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Promo Image, text & link"
                 text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
                 linkName="Lorem Ipsum Dolor"
-                btn=true
+                linkAsBtn=true
             }}
         </div>
         <div class="col-md-4">
@@ -102,7 +140,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Promo Image, text & link"
                 text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
                 linkName="Lorem Ipsum Dolor"
-                btn=true
+                linkAsBtn=true
             }}
         </div>
         <div class="col-md-4">
@@ -112,24 +150,25 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Promo Image, text & link"
                 text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
                 linkName="Lorem Ipsum Dolor"
-                btn=true
+                linkAsBtn=true
             }}
         </div>
     </div>
 </div>
 
 <div class="container">
-    {{>divider}}
+    <div class="row">
+        <div class="col-md-12">
+            {{ renderContent 'divider'
+                icon="devices"
+            }}
+        </div>
+    </div>
 </div>
 
 
 
-
-
-
-<!-- <a class="full-width-image__btn btn btn-default" title="" href="#">Lorem ipsum dolor</a> -->
-
-<div class="parallax" data-stellar-background-ratio="0.5" style="background-image: url('images/parallax_image.jpg'); height:450px;">
+<div class="parallax parallax-img" style="background-image: url('images/parallax_image.jpg'); height:auto;">
 
 <div class="inverse">
 <div class="container">
@@ -140,7 +179,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=true
+                btnAsLink=true
             }}
         </div>
         <div class="col-md-4">
@@ -149,7 +188,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=true
+                btnAsLink=true
             }}
         </div>
         <div class="col-md-4">
@@ -158,7 +197,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=true
+                btnAsLink=true
             }}
         </div>
     </div>
@@ -176,29 +215,29 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
             <div class="row">
                 <div class="col-md-4">
                     {{ renderContent 'iconTextButton'
-                        class=""
                         headerLeftIcon="access_time"
                         header="Content element 1"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                         buttonName="Read more"
+                        btnAsLink=false
                     }}
                 </div>
                 <div class="col-md-4">
                     {{ renderContent 'iconTextButton'
-                        class=""
                         headerLeftIcon="settings"
                         header="Content element 1"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                         buttonName="Read more"
+                        btnAsLink=false
                     }}
                 </div>
                 <div class="col-md-4">
                     {{ renderContent 'iconTextButton'
-                        class=""
                         headerLeftIcon="school"
                         header="Content element 1"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                         buttonName="Read more"
+                        btnAsLink=false
                     }}
                 </div>
             </div>
@@ -210,29 +249,29 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
             <div class="row">
                 <div class="col-md-4">
                     {{ renderContent 'iconTextButton'
-                        class=""
                         headerLeftIcon="access_time"
                         header="Content element 1"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                         buttonName="Read more"
+                        btnAsLink=false
                     }}
                 </div>
                 <div class="col-md-4">
                     {{ renderContent 'iconTextButton'
-                        class=""
                         headerLeftIcon="settings"
                         header="Content element 1"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                         buttonName="Read more"
+                        btnAsLink=false
                     }}
                 </div>
                 <div class="col-md-4">
                     {{ renderContent 'iconTextButton'
-                        class=""
                         headerLeftIcon="school"
                         header="Content element 1"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                         buttonName="Read more"
+                        btnAsLink=false
                     }}
                 </div>
             </div>
@@ -249,29 +288,29 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
             <div class="row">
                 <div class="col-md-4">
                     {{ renderContent 'iconTextButton'
-                        class=""
                         headerLeftIcon="access_time"
                         header="Content element 1"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                         buttonName="Read more"
+                        btnAsLink=true
                     }}
                 </div>
                 <div class="col-md-4">
                     {{ renderContent 'iconTextButton'
-                        class=""
                         headerLeftIcon="settings"
                         header="Content element 1"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                         buttonName="Read more"
+                        btnAsLink=true
                     }}
                 </div>
                 <div class="col-md-4">
                     {{ renderContent 'iconTextButton'
-                        class=""
                         headerLeftIcon="school"
                         header="Content element 1"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                         buttonName="Read more"
+                        btnAsLink=true
                     }}
                 </div>
             </div>
@@ -283,163 +322,37 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
         <div class="row">
             <div class="col-md-4">
                 {{ renderContent 'iconTextButton'
-                    class=""
                     headerLeftIcon="access_time"
                     header="Content element 1"
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                     buttonName="Read more"
+                    btnAsLink=true
                 }}
             </div>
             <div class="col-md-4">
                 <div class="inverse">
                 {{ renderContent 'iconTextButton'
-                    class=""
                     headerLeftIcon="settings"
                     header="Content element 1"
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                     buttonName="Read more"
+                    btnAsLink=true
                 }}
                 </div>
             </div>
             <div class="col-md-4">
                 {{ renderContent 'iconTextButton'
-                    class=""
                     headerLeftIcon="school"
                     header="Content element 1"
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                     buttonName="Read more"
+                    btnAsLink=true
                 }}
             </div>
         </div>
     </div>
 </div>
 
-
-
-
-<!--
-
-
-
-<div class="gray-background">
-        <div id="c180" class="container mosaic mosaic-gray">
-            <div class="row">
-                <div class="col1  col-md-4">
-                    <div id="c181" class="">
-
-                        <div class="icon-text-btn">
-                            <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon</h3>
-                            <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col2  col-md-4">
-                        <div id="c182" class="">
-                            <div class="icon-text-btn">
-                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 1)</h3>
-                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col3  col-md-4">
-                        <div id="c183" class="">
-                            <div class="icon-text-btn">
-                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 2)</h3>
-                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="c180" class="container mosaic mosaic-gray">
-                <div class="row">
-                    <div class="col1  col-md-4">
-                        <div id="c181" class="">
-                            <div class="icon-text-btn">
-                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon</h3>
-                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col2  col-md-4">
-                        <div id="c182" class="">
-                            <div class="icon-text-btn">
-                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 1)</h3>
-                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col3  col-md-4">
-                        <div id="c183" class="">
-                            <div class="icon-text-btn">
-                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 2)</h3>
-                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="c182" class="container mosaic mosaic-blue">
-                <div class="row">
-                    <div class="col1  col-md-4">
-                        <div id="c181" class="icon-right">
-                            <div class="icon-text-btn">
-                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon</h3>
-                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col2  col-md-4">
-                        <div id="c182" class="icon-right">
-                            <div class="icon-text-btn">
-                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 1)</h3>
-                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col3  col-md-4">
-                        <div id="c183" class="icon-right">
-                            <div class="icon-text-btn">
-                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 2)</h3>
-                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="c181" class="container mosaic mosaic-blue">
-                <div class="row">
-                    <div class="col1  col-md-4">
-                        <div id="c184" class="">
-                            <div class="icon-text-btn">
-                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon</h3>
-                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col2  col-md-4">
-                        <div id="c185" class="">
-                            <div class="icon-text-btn">
-                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 1)</h3>
-                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col3  col-md-4">
-                        <div id="c186" class="">
-                            <div class="icon-text-btn">
-                                <h3 class="icon-text-btn__header"><span class="icon-text-btn__icon icons icon-language"></span>Link box with icon (copy 2)</h3>
-                                <p class="icon-text-btn__p">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-</div> -->
 
 <div class="blue-mountain-wrp">
     <div class="container">
@@ -450,7 +363,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                     header="Content element 1"
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                     buttonName="Read more"
-                    btn=false
+                    btnAsLink=true
                 }}
             </div>
             <div class="col-md-4">
@@ -459,7 +372,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                     header="Content element 1"
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                     buttonName="Read more"
-                    btn=false
+                    btnAsLink=true
                 }}
             </div>
             <div class="col-md-4">
@@ -468,7 +381,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                     header="Content element 1"
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                     buttonName="Read more"
-                    btn=false
+                    btnAsLink=true
                 }}
             </div>
         </div>
@@ -476,7 +389,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
 </div>
 
 
-<div class="parallax" data-stellar-background-ratio="0.5" style="background-image: url('images/parallax_image.jpg'); height:400px;">
+<div class="parallax parallax-img" style="background-image: url('images/parallax_image.jpg'); height:400px;">
     <div class="saturated-inverse">
     <div id="c177" class="container ">
         <div class="row">
@@ -519,7 +432,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=true
+                btnAsLink=true
             }}
         </div>
         <div class="col-md-4">
@@ -528,7 +441,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=true
+                btnAsLink=true
             }}
         </div>
         <div class="col-md-4">
@@ -537,7 +450,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=true
+                btnAsLink=true
             }}
         </div>
     </div>
@@ -577,7 +490,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Promo Image, text & link"
                 text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
                 linkName="Lorem Ipsum Dolor"
-                btn=true
+                linkAsBtn=false
             }}
         </div>
         <div class="col-md-4">
@@ -587,7 +500,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Promo Image, text & link"
                 text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
                 linkName="Lorem Ipsum Dolor"
-                btn=true
+                linkAsBtn=false
             }}
         </div>
         <div class="col-md-4">
@@ -597,7 +510,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Promo Image, text & link"
                 text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
                 linkName="Lorem Ipsum Dolor"
-                btn=true
+                linkAsBtn=false
             }}
         </div>
     </div>
@@ -613,7 +526,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=true
+                btnAsLink=true
             }}
         </div>
         <div class="col-md-4">
@@ -622,7 +535,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=true
+                btnAsLink=true
             }}
         </div>
         <div class="col-md-4">
@@ -631,12 +544,21 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=true
+                btnAsLink=true
             }}
         </div>
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {{ renderContent 'divider'
+                icon="school"
+            }}
+        </div>
+    </div>
+</div>
 
 <div class="container">
     <div class="row">
@@ -646,7 +568,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=false
+                btnAsLink=false
             }}
         </div>
         <div class="col-md-4">
@@ -655,7 +577,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1 Lorem ipsum dolor"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=false
+                btnAsLink=false
             }}
         </div>
         <div class="col-md-4">
@@ -664,7 +586,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                 header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
-                btn=false
+                btnAsLink=false
             }}
         </div>
     </div>
@@ -696,11 +618,12 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            {{>divider}}
+            {{ renderContent 'divider'
+                icon=false
+            }}
         </div>
     </div>
 </div>
-
 
 <div class="container">
     <div class="row">
@@ -713,28 +636,35 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
 </div>
 
 
-<div class="parallax" data-stellar-background-ratio="0.5" style="background-image: url('images/parallax_image.jpg'); height:130px;">
-    <div class="saturated-inverse ">
-    <div id="c182" class="container ">
-        <div class="row">
-            <div class="col1  col-md-7 col-md-offset-1">
-                <div class="blue-mountaih-header ">
-                <div id="c183" class=" ">
-                    <h2>Lorem ipsum dolor sit amet markum</h2>
-                </div>
-                </div>
-                <div id="c183" class=" ">
-                    <h4>Full width section with text, link and parallax background image</h4>
+
+{{ renderContent 'parallax'
+        imgSrc="images/parallax_image.jpg"
+        videoLink=false
+        hideInMobile=false
+        height="auto"
+        elements='
+            <div class="saturated-inverse ">
+            <div id="c182" class="container ">
+                <div class="row">
+                    <div class="col1  col-md-7 col-md-offset-1">
+                        <div class="blue-mountaih-header ">
+                        <div id="c183" class=" ">
+                            <h2>Lorem ipsum dolor sit amet markum</h2>
+                        </div>
+                        </div>
+                        <div id="c183" class=" ">
+                            <h4>Full width section with text, link and parallax background image</h4>
+                        </div>
+                    </div>
+                    <div class="col2 col-md-3">
+                        <div class=" margin-top-50">
+                        <div id="c184" class="text-center">
+                            <a href="/" class="btn btn-default">Lorem ipsum dolor</a>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col2 col-md-3">
-                <div class=" margin-top-50">
-                <div id="c184" class="text-center">
-                    <a href="/" class="btn btn-default">Lorem ipsum dolor</a>
-                </div>
-                </div>
             </div>
-        </div>
-    </div>
-    </div>
-</div>
+        '
+}}
