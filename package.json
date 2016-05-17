@@ -1,9 +1,9 @@
 {
-  "name": "felayout_t3kit_new",
+  "name": "felayout_bluemountain",
   "version": "0.0.1",
-  "description": "Front-End layout for felayout_t3kit_new project",
+  "description": "Front-End layout for theme_t3kit_bluemountain project",
   "license": "MIT",
-  "repository": "t3kit/felayout_t3kit",
+  "repository": "t3kit/felayout_bluemountain",
   "devDependencies": {
     "autoprefixer": "6.3.1",
     "grunt": "0.4.5",
