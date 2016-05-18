@@ -12,33 +12,38 @@
     margin: 20px 0;
 }
 .divider__wrp {
-    display: inline-block;
+    // display: inline-block;
     position: relative;
     line-height: 1;
+    font-size: 32px;
 }
 .divider__icon {
     color: tint(@main-text-color, 80%);
-    font-size: 26px;
+    font-size: inherit;
 }
 
-.divider__wrp:before, .divider__wrp:after{
+.divider__wrp:after{
+    left: .5em;
+    margin-right: -50%;
+    background-color: tint(@main-text-color, 90%);
     content: "";
-    display: block;
-    position: absolute;
-    width: 700px;
+    display: inline-block;
     height: 1px;
-    background: tint(@main-text-color, 90%);
+    position: relative;
+    vertical-align: middle;
+    margin-top: -0.2em;
+    width: 50%;
 }
 
-.divider__wrp:before {
-    left: 100%;
-    top: 50%;
-    margin-top: -1px;
-    margin-left: 1.8em;
-}
-.divider__wrp:after {
-    right: 100%;
-    bottom: 50%;
-    margin-bottom: -1px;
-    margin-right: 1.8em;
+.divider__wrp:before{
+    right: .5em;
+    margin-left: -50%;
+    background-color: tint(@main-text-color, 90%);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    margin-top: -0.2em;
+    width: 50%;
 }
