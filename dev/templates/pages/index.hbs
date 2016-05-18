@@ -78,7 +78,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
     </div>
 </div>
 
-<div class="parallax parallax-video" data-jarallax-video="https://www.youtube.com/watch?v=ab0TSkLe-E0" style=" background-image: url('images/temp-carousel-3.jpg'); height:auto;">
+<div class="parallax parallax-video" data-jarallax-video="https://www.youtube.com/watch?v=ab0TSkLe-E0" style=" background-image: url('images/slider_image.jpg'); height:auto;">
     <div class="inverse">
     <div id="c181" class="container ">
             <div class="row">
@@ -389,12 +389,12 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
 </div>
 
 
-<div class="parallax parallax-img" style="background-image: url('images/parallax_image.jpg'); height:400px;">
+<div class="parallax parallax-img" style="background-image: url('images/parallax_image.jpg'); height:auto;">
     <div class="saturated-inverse">
     <div id="c177" class="container ">
         <div class="row">
             <div class="col1  col-md-8 one-column-align-center">
-                <div class="blue-mountaih-header margin-top-70">
+                <div class="blue-mountaih-header margin-top-50">
                 <div id="c178" class=" text-center">
                     <header>
                         <h2>Lorem ipsum dolor sit amet markum set</h2>
@@ -402,9 +402,9 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                     </header>
                 </div>
                 </div>
-                <div id="c179" class=" ">
-                    <hr class="ce-div">
-                </div>
+                {{ renderContent 'divider'
+                    icon="school"
+                }}
                 <div id="c180" class=" text-center">
                     <div class="ce-textpic ce-right ce-intext">
                         <div class="ce-bodytext">
@@ -412,7 +412,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                         </div>
                     </div>
                 </div>
-                <div class=" margin-top-10 ">
+                <div class=" margin-top-10 margin-bottom-40">
                     <div id="c181" class="text-center">
                         <a href="/" class="btn btn-default">LOREM IPSUM DOLOR</a>
                     </div>
@@ -574,7 +574,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
         <div class="col-md-4">
             {{ renderContent 'iconTextButton'
                 headerLeftIcon="settings"
-                header="Content element 1 Lorem ipsum dolor"
+                header="Content element 1"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
                 buttonName="Read more"
                 btnAsLink=false
@@ -640,7 +640,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
 {{ renderContent 'parallax'
         imgSrc="images/parallax_image.jpg"
         videoLink=false
-        hideInMobile=false
+        hideInMobile=true
         height="auto"
         elements='
             <div class="saturated-inverse ">
