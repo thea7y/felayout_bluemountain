@@ -905,20 +905,19 @@
 
 // Navigation
 @nav-height:                    60px;
-@nav-link-color:                #fff;//@main-text-color;
+@nav-link-color:                #fff;
 @nav-link-hover-color:          @nav-link-color;
 @nav-link-active-color:         @main-color;
 @nav-link-active-hover-color:   @nav-link-active-color;
 @nav-link-hover-background:     tint(@nav-background-color, 10%);
 
-// @nav-link-arrow-color:          fade(@main-text-color, 50%);
-@nav-link-arrow-color:          fade(#fff, 50%);
+@nav-link-arrow-color:          fade(@nav-link-color, 50%);
 
-@nav-background-color:          darken(@main-text-color, 32%);//@main-body-bg;
+@nav-background-color:          darken(@main-text-color, 32%);
 
-// @nav-search-btn-color:          fade(@main-text-color, 50%);
 @nav-search-btn-color:          fade(@main-color, 50%);
 
+@mobile-nav-toggle-btn:        left;
 
 // Social icons
 @social-icons-bg-color:         @main-color;//lighten(@main-text-color, 30%);
@@ -926,7 +925,7 @@
 
 // Breadcrumbs
 @breadcrumbs-background:        @main-body-bg;
-@breadcrumbs-link-color:        @main-text-color;
+@breadcrumbs-link-color:        darken(@main-text-color, 20%);
 @breadcrumbs-link-active-color: @main-color;
 @breadcrumbs-link-hover-color:  lighten(@main-text-color, 15%);
 
@@ -935,20 +934,21 @@
 @sub-navigation-background:         @main-body-bg;
 @sub-navigation-border:             @border-color;
 @sub-navigation-active-border:      @main-color;
-@sub-navigation-link-color:         @main-text-color;
+@sub-navigation-link-color:         darken(@main-text-color, 20%);
+// @sub-navigation-link-color:         @main-text-color;
 @sub-navigation-link-hover-color:   @sub-navigation-link-color;
-@sub-navigation-link-hover-bg:      darken(@main-body-bg, 15%);
+@sub-navigation-link-hover-bg:      darken(@main-body-bg, 10%);
 
 @sub-navigation-link-active-color:  @sub-navigation-link-color;
-@sub-navigation-link-active-bg:     @sub-navigation-link-hover-bg;
+@sub-navigation-link-active-bg:     fade(@main-color, 20%);
 
 
 
 
 // FOOTER
-@footer-background:             #181818; //#1D556F;
-@footer-color:                  #8d8d8d; //#eee;
-@footer-link-color:             @main-color;//@footer-color;
+@footer-background:             #181818;
+@footer-color:                  #8d8d8d;
+@footer-link-color:             @main-color;
 @footer-link-hover-color:       @main-link-hover-color;
 
 
