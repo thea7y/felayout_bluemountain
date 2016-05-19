@@ -55,7 +55,7 @@
 
 // Breadcrumbs
 @breadcrumbs-background:        @main-body-bg;
-@breadcrumbs-link-color:        @main-text-color;
+@breadcrumbs-link-color:        darken(@main-text-color, 20%);
 @breadcrumbs-link-active-color: @main-color;
 @breadcrumbs-link-hover-color:  lighten(@main-text-color, 15%);
 
@@ -64,12 +64,13 @@
 @sub-navigation-background:         @main-body-bg;
 @sub-navigation-border:             @border-color;
 @sub-navigation-active-border:      @main-color;
-@sub-navigation-link-color:         @main-text-color;
+@sub-navigation-link-color:         darken(@main-text-color, 20%);
+// @sub-navigation-link-color:         @main-text-color;
 @sub-navigation-link-hover-color:   @sub-navigation-link-color;
-@sub-navigation-link-hover-bg:      darken(@main-body-bg, 15%);
+@sub-navigation-link-hover-bg:      darken(@main-body-bg, 10%);
 
 @sub-navigation-link-active-color:  @sub-navigation-link-color;
-@sub-navigation-link-active-bg:     @sub-navigation-link-hover-bg;
+@sub-navigation-link-active-bg:     fade(@main-color, 20%);
 
 
 
