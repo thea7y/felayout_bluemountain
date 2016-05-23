@@ -1,3 +1,7 @@
+#### v0.0.2 `May 23, 2016`
+- **[FIX]** add missed grey-wrp styles & footer fixes ([9e6130f](https://github.com/t3kit/felayout_bluemountain/commit/9e6130f))
+- **[REFACTOR]** restyling sub-navigation ([021025c](https://github.com/t3kit/felayout_bluemountain/commit/021025c))
+
 #### v0.0.1 `May 18, 2016`
 - **[FIX]** subnavigation bottom padding ([ef7922f](https://github.com/t3kit/felayout_bluemountain/commit/ef7922f))
 - **[REFACTOR]** improve divider element ([0c84c00](https://github.com/t3kit/felayout_bluemountain/commit/0c84c00))
