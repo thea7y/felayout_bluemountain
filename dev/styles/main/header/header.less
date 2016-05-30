@@ -103,7 +103,7 @@
     color: lighten(@main-link-color, 15%);
     font-size: 14px;
     position: relative;
-    top: 1px;
+    // top: 1px;
     padding-right: 6px;
 }
 
@@ -673,10 +673,10 @@
     .no-touch ._sub .main-navigation__item-link:after{
         .icons();
         // content: "\e10f";
-        padding-left: 3px;
+        padding-left: 5px;
         position: relative;
         font-size: 15px;
-        top: 2px;
+        top: 0;
         color: @nav-link-arrow-color;
     }
 
@@ -704,7 +704,7 @@
 
     .touch .main-navigation__item._sub .main-navigation__open-sub-menu-link:before {
         .icons();
-        content: "\e10f";
+        // content: "\e10f";
         color: @nav-link-arrow-color;
         position: relative;
         font-size: 30px;
@@ -821,22 +821,22 @@
         width: 100%;
     }
     .main-navigation__search-btn:before {
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
         border: 2px solid @main-color;
 
         top: 50%;
         left: 50%;
-        margin-top: -10px;
-        margin-left: -9px;
+        margin-top: -8px;
+        margin-left: -8px;
     }
     .main-navigation__search-btn:after {
         height: 2px;
-        width: 8px;
+        width: 6px;
         top: 50%;
         left: 50%;
         margin-top: 5px;
-        margin-left: 2px;
+        margin-left: 3px;
         background-color: @main-color;
     }
 }
@@ -869,7 +869,7 @@
     top: 50%;
     margin-top: -1px;
     left: 50%;
-    margin-left: -11px;
+    margin-left: -10px;
     background: @nav-search-btn-color;
     opacity: 0;
     -webkit-transform: translateZ(0);
@@ -884,7 +884,7 @@
     .main-navigation__search-btn span:before,
     .main-navigation__search-btn span:after {
         height: 3px;
-        width: 22px;
+        width: 20px;
         top: 50%;
         // margin-top: -2px;
     }
@@ -1199,7 +1199,7 @@
 
 .header-middle__search-submit {
     background: @header-middle-search-btn-bg;
-    font-size: @header-middle-search-height / 2 + 8px;
+    font-size: @header-middle-search-height / 2;
     border: 0;
     color: @main-body-bg;
     width: @header-middle-search-height;
