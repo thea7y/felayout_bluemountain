@@ -558,12 +558,14 @@
     transition: transform .2s linear, opacity .2s linear, visibility .2s linear, max-height .2s linear;
 }
 
-._open-mobile-dropdown .main-navigation__sub-item-list {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1,1);
-    opacity: 1;
-    visibility: visible;
-    max-height: 100%;
+@media (max-width: 991px) {
+    ._open-mobile-dropdown .main-navigation__sub-item-list {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1,1);
+        opacity: 1;
+        visibility: visible;
+        max-height: 100%;
+    }
 }
 
 .main-navigation__sub-item {
