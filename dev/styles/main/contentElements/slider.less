@@ -27,14 +27,14 @@
 .img-slider__caption-sub-header{
     font-weight: 300;
     font-size: 20px;
-    color: #fff;
+    color: tint(@main-color, 90%);
 
 }
 .img-slider__caption-header{
     font-family: @font-family-serif;
     text-shadow: 0 1px 0 rgba(100,100,100,.3);
     font-size: 36px;
-    color: #fff;
+    color: tint(@main-color, 90%);
     margin-top: 10px;
     font-weight: 400;
 
@@ -42,21 +42,29 @@
 
 .img-slider__caption-p{
     font-size: 13px;
-    color: #fff;
+    color: tint(@main-color, 90%);
     padding: 6px 10px;
 }
 .img-slider__caption-link{
     padding: 10px 36px;
-    background: #ff5a00;
-    color: #FFF;
+    background: saturate(spin(@main-color, 177), 30%);
+    color: tint(@main-color, 90%);
     font-size: 16px;
-    border: 1px solid #ff5a00;
+    border: 1px solid saturate(spin(@main-color, 177), 30%);
 }
 
 .no-touch .img-slider__caption-link:hover{
-    color: #FFF;
-    background: darken(#ff5a00, 5%);
+    color: tint(@main-color, 90%);
+    background: saturate(spin(@main-color, 179), 30%);
 }
+
+.no-touch .img-slider__caption-link:active {
+    outline: 0;
+    background-image: none;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+    border-color: tint(spin(@main-color, 177), 18%);
+}
+
 .img-slider__pagination{
 
 }
