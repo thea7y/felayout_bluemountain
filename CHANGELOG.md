@@ -1,3 +1,15 @@
+#### v0.1.0 `June 2, 2016`
+- **[FIX]** font-family fixes ([9ae5311](https://github.com/t3kit/felayout_bluemountain/commit/9ae5311))
+- **[FIX]** use footerLinkColor variable for footer bottom nav ([8069ec4](https://github.com/t3kit/felayout_bluemountain/commit/8069ec4))
+- **[FIX]** change alignment for icons in bigIconText element ([0d455ce](https://github.com/t3kit/felayout_bluemountain/commit/0d455ce))
+- **[FIX]** change font path to use it in TYPO3 ([62105e4](https://github.com/t3kit/felayout_bluemountain/commit/62105e4))
+- **[FIX]** add color variables for slider element ([00462b5](https://github.com/t3kit/felayout_bluemountain/commit/00462b5))
+- **[FIX]** fix mobile menu on resizing event (Podio bug17) ([d7e28df](https://github.com/t3kit/felayout_bluemountain/commit/d7e28df))
+- **[FEATURE]** add animations for image link (imageTextLink elem) ([0596333](https://github.com/t3kit/felayout_bluemountain/commit/0596333))
+- **[FIX]** fix header-top in mobile (podio bug20) ([0f2473b](https://github.com/t3kit/felayout_bluemountain/commit/0f2473b))
+- **[CHORE]** fix static web server ([131724d](https://github.com/t3kit/felayout_bluemountain/commit/131724d))
+- **[FEATURE]** add new icons set ([77fd3aa](https://github.com/t3kit/felayout_bluemountain/commit/77fd3aa))
+
 #### v0.0.2 `May 23, 2016`
 - **[FIX]** add missed grey-wrp styles & footer fixes ([9e6130f](https://github.com/t3kit/felayout_bluemountain/commit/9e6130f))
 - **[REFACTOR]** restyling sub-navigation ([021025c](https://github.com/t3kit/felayout_bluemountain/commit/021025c))
