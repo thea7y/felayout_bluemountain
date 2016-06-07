@@ -2,21 +2,22 @@
 // === Breadcrumbs =========================================
 // =========================================================
 .breadcrumbs {
-    border-bottom: 1px solid @border-color;
+    border-bottom: 1px solid @breadcrumbs-border-color;
     margin-bottom: 30px;
     background: @breadcrumbs-background;
 }
 
 .breadcrumbs__list {
     padding: 12px 15px;
-    padding-left: 0;
+    padding-left: 4px;
     margin-bottom: 0;
 }
 
 .breadcrumbs__list-item {
-    font-size: 13px;
+    font-size: 16px;
     display: inline-block;
     color: @breadcrumbs-link-color;
+    text-transform: uppercase;
 }
 
 .breadcrumbs__list-link{
@@ -33,12 +34,13 @@
 
 .breadcrumbs__list-item:before {
     content: "/";
-    color: lighten(@breadcrumbs-link-color, 35%);
-    padding: 0 2px;
+    color: @breadcrumbs-link-active-color;
+    padding: 0 8px 0 4px;
 }
 
 .breadcrumbs__list-item:first-child:before {
     content: "";
+    padding: 0;
 }
 // =========================================================
 // =========================================================

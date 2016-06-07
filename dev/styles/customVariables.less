@@ -55,9 +55,10 @@
 
 // Breadcrumbs
 @breadcrumbs-background:        @main-body-bg;
-@breadcrumbs-link-color:        darken(@main-text-color, 20%);
-@breadcrumbs-link-active-color: @main-color;
-@breadcrumbs-link-hover-color:  lighten(@main-text-color, 15%);
+@breadcrumbs-link-color:        @main-link-color; //darken(@main-text-color, 20%);
+@breadcrumbs-link-active-color: darken(@main-text-color, 20%);
+@breadcrumbs-link-hover-color:  @main-link-hover-color; //lighten(@main-text-color, 15%);
+@breadcrumbs-border-color:      tint(@main-link-color, 70%);
 
 
 // Sub navigation
