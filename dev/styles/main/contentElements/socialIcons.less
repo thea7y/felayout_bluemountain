@@ -22,7 +22,8 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate3D(-50%, -50%, 0) rotateY(0);
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);   // ios8 safari fix - only works in this order
         }
 
         &:after {
@@ -35,7 +36,8 @@
             border-radius: 50%;
             top: 50%;
             left: 50%;
-            transform: translate3D(-50%, -50%, 0);
+            transform: translateY(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);   // ios8 safari fix - only works in this order
         }
     }
 }
