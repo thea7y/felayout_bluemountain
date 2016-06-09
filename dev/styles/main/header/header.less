@@ -45,6 +45,11 @@
         box-shadow: none;
     }
 }
+@media (min-width: 1366px) {
+    .header-top{
+        max-width: 1170px;
+    }
+}
 
 .header-top__contact{
     float: left;
@@ -54,7 +59,7 @@
 
 .header-top__contact-tel {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 15px;
     line-height: @header-top-height;
 }
 
@@ -69,7 +74,7 @@
 
 .header-top__contact-email {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 15px;
     // line-height: 30px;
     line-height: @header-top-height;
 }
@@ -300,6 +305,11 @@
 @media (min-width: 992px) {
     .header-middle-wrp{
         z-index: 2500;
+    }
+}
+@media (min-width: 1366px) {
+    .header-middle{
+        max-width: 1170px;
     }
 }
 
@@ -627,6 +637,11 @@
         display: block;
         .clearfix();
         position: relative;
+    }
+    @media (min-width: 1366px) {
+        .main-navigation__items-wrp{
+            max-width: 1170px;
+        }
     }
 
     .main-navigation__items-list {
