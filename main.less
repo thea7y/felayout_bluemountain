@@ -1283,7 +1283,7 @@
 // =======================================
 .icon-t3-mobile:before {content: "\e953";}  // tel icon
 .icon-t3-mail:before {content: "\e934";}  // mail icon
-.icon-t3-home:before {content: "\e29e";} // home icon
+.icon-t3-home:before {content: "\e93b";} // home icon
 .icon-t3-sitemap:before {content: "\eb";} // sitemap icon
 .icon-t3-login:before {content: "\e967";} // login icon
 .icon-t3-map:before {content: "\44";} // map icon
@@ -4297,16 +4297,17 @@
 }
 
 .img-slider__caption-p{
-    font-size: 13px;
+    -webkit-font-smoothing: antialiased;
     color: tint(@main-color, 90%);
-    padding: 6px 10px;
 }
 .img-slider__caption-link{
     padding: 10px 36px;
     background: saturate(spin(@main-color, 177), 30%);
     color: tint(@main-color, 90%);
-    font-size: 16px;
+    // font-size: 16px;
     border: 1px solid saturate(spin(@main-color, 177), 30%);
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .no-touch .img-slider__caption-link:hover{
@@ -4352,9 +4353,6 @@
     .img-slider{
         height: 480px;
     }
-    .img-slider__caption-p{
-        font-size: 16px;
-    }
     .img-slider__caption-sub-header{
         font-size: 26px;
     }
@@ -4384,14 +4382,9 @@
         font-size: 72px;
         margin-top: 20px;
     }
-    .img-slider__caption-p{
-        padding:12px 20px;
-        height: auto;
-    }
     .img-slider__caption-link{
-        padding: 14px 54px;
+        padding: 11px 54px;
         display: inline-block;
-        margin-top: 10px;
         margin-right: 7px;
         margin-left: 7px;
         text-transform: uppercase;
@@ -4868,10 +4861,13 @@
 }
 
 .breadcrumbs__list-item {
-    font-size: 16px;
+    font-size: 14px;
     display: inline-block;
     color: @breadcrumbs-link-color;
     text-transform: uppercase;
+}
+.breadcrumbs__list-item .icon-t3-home {
+    padding-right: 5px;
 }
 
 .breadcrumbs__list-link{
@@ -4899,8 +4895,6 @@
 // =========================================================
 // =========================================================
 
-
-
 // =========================================================
 // === Sub Navigation ======================================
 // =========================================================
@@ -4922,7 +4916,7 @@
 }
 .sub-navigation__link {
     display: block;
-    padding: 15px 15px 15px 20px;
+    padding: 13px 14px 13px 20px;
     color: @sub-navigation-link-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -4931,6 +4925,12 @@
     transition: all 0.1s linear;
     border: 1px solid shade(@sub-navigation-border, 5%);
     border-width: 0 0 1px 0;
+    font-size: 15px;
+}
+@media (min-width: 1200px) {
+    .sub-navigation__link {
+        font-size: 16px;
+    }
 }
 
 .sub-navigation__link._sub-level-2 {
@@ -4962,6 +4962,7 @@
     padding-left: 34px;
     background-color: shade(@sub-navigation-background, 9%);
     border-color: shade(@sub-navigation-border, 14%);
+    text-transform: uppercase;
 }
 
 .no-touch .sub-navigation__link._sub-level-4:hover {
@@ -4972,6 +4973,7 @@
     padding-left: 41px;
     background-color: shade(@sub-navigation-background, 12%);
     border-color: shade(@sub-navigation-border, 17%);
+    text-transform: uppercase;
 }
 
 .no-touch .sub-navigation__link._sub-level-5:hover {
