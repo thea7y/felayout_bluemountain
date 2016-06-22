@@ -1,3 +1,18 @@
+
+#### v0.3.0 `June 22, 2016`
+- **[FEATURE]** add bootstrap slider element ([ddeb12c](https://github.com/t3kit/felayout_bluemountain/commit/ddeb12c))
+- **[FIX]** modify colors (add variables) for search suggest dropdown ([cba07ac](https://github.com/t3kit/felayout_bluemountain/commit/cba07ac))
+- **[FIX]** search box in main menu on tablets under nav arrows (z-index) ([17a36aa](https://github.com/t3kit/felayout_bluemountain/commit/17a36aa))
+- **[CHORE]** add colors for error messages (add chalk plugin) ([c2c493e](https://github.com/t3kit/felayout_bluemountain/commit/c2c493e))
+- **[CHORE]** check if local master branch synced with remote, before push to less/css branches ([295ff2c](https://github.com/t3kit/felayout_bluemountain/commit/295ff2c))
+- **[CHORE]** add new plugin to run shell commands ([a700387](https://github.com/t3kit/felayout_bluemountain/commit/a700387))
+- **[FIX]** IE fix, background-image instead of parallax ([c747373](https://github.com/t3kit/felayout_bluemountain/commit/c747373))
+- **[FIX]** IE fix, Use tab to navigate slider ([6628cbe](https://github.com/t3kit/felayout_bluemountain/commit/6628cbe))
+- **[FIX]** main navigation in iPad landscape-view (Podio bug #25) ([ba0b700](https://github.com/t3kit/felayout_bluemountain/commit/ba0b700))
+- **[FIX]** align social icons ([8af15d1](https://github.com/t3kit/felayout_bluemountain/commit/8af15d1))
+- **[FIX]** start page content + content elem-s font sizes ([27c08a1](https://github.com/t3kit/felayout_bluemountain/commit/27c08a1))
+
+***
 #### v0.2.0 `June 13, 2016`
 - **[FIX]** slider UI fixes (image slider btn) ([88a514b](https://github.com/t3kit/felayout_bluemountain/commit/88a514b))
 - **[FIX]** Use tab to navigate slider ([ad06db5](https://github.com/t3kit/felayout_bluemountain/commit/ad06db5))
