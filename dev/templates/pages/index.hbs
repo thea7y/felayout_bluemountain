@@ -81,42 +81,24 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
 <div class="parallax parallax-video" data-jarallax-video="https://www.youtube.com/watch?v=lu2oSpoRp60" style=" background-image: url('images/slider_image.jpg'); height:auto;">
     <div class="inverse">
     <div id="c181" class="container ">
-            <div class="row">
+        <div class="row">
             <div class="col1  col-md-8 one-column-align-center">
-                <div class="blue-mountain-header">
-                    <div id="c183" class="text-center margin-top-50">
+                <div class="blue-mountain-header margin-top-50">
+                    <div id="c183" class="text-center ">
                         <h2>Lorem ipsum dolor sit amet markum</h2>
                     </div>
                 </div>
-                <div id="c183" class="text-center">
-                    <div class="ce-textpic ce-right ce-intext">
-                        <div class="ce-bodytext">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu.</p>
+                <div class="margin-bottom-30">
+                    <div id="c183" class="text-center">
+                        <div class="ce-textpic ce-right ce-intext">
+                            <div class="ce-bodytext">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="row">
-            <div class="col-md-6">
-                {{ renderContent 'bigIconTextButton'
-                    bigTopIcon="users"
-                    header="Content element 1"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
-                    buttonName="READ MORE"
-                    btnAsLink=false
-                }}
-            </div>
-            <div class="col-md-6">
-                {{ renderContent 'bigIconTextButton'
-                    bigTopIcon="tablet"
-                    header="Content element 1"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitfhghfhor. Ut in nulla enim. Phasellus class aptent taciti sociosqu."
-                    buttonName="READ MORE"
-                    btnAsLink=false
-                }}
-            </div>
-            </div>
+        </div>
     </div>
     </div>
 </div>
@@ -590,6 +572,13 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {{>newsCarousel}}
+        </div>
+    </div>
+</div>
 
 <div class="container">
     <div class="row">
