@@ -12,6 +12,11 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
 <div class="container">
     <div class="row">
         <div class="col-md-3">
+
+            {{> newsArchive}}
+            {{> newsTags}}
+            {{> newsCategories}}
+
             {{> subNavigation}}
 
         </div>
@@ -48,7 +53,7 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                         <div class="news-img-wrap">
                             <div class="outer">
                                 <div class="mediaelement mediaelement-image">
-                                    <a href="images/foto1.jpg" title="Foto 1 title" class="lightbox">
+                                    <a href="images/foto1.jpg" title="Foto 1 title" class="lightbox" rel="lightbox[myImageSet]">
                                         <img title="Foto 1 title" alt="Foto 1 alternative text" src="images/foto1.jpg" width="282" height="188"> </a>
                                 </div>
                                 <p class="news-img-caption"> This is Öresundsbron, the bridge between Sweden and Denmark. </p>
@@ -70,10 +75,20 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                         <div class="news-related-wrap">
                             <!-- Related news records -->
                             <div class="news-related news-related-news">
-                                <h4> Related news </h4>
+                                <h4>Related news </h4>
                                 <ul>
                                     <li>
-                                        <span class="news-related-news-date">09/15/2015</span> <a title="Nullam sagittis condimentum est quis malesuada." href=""> Nullam sagittis condimentum est quis malesuada.</a> </li>
+                                        <span class="news-related-news-date">09/15/2015</span>
+                                        <a title="Nullam sagittis condimentum est quis malesuada." href="/content/plugins/news/article/nullam-sagittis-condimentum-est-quis-malesuada-2/"> Nullam sagittis condimentum est quis malesuada. </a>
+                                    </li>
+                                    <li>
+                                        <span class="news-related-news-date">09/15/2015</span>
+                                        <a title="Nullam sagittis condimentum est quis malesuada." href="/content/plugins/news/article/nullam-sagittis-condimentum-est-quis-malesuada-1/"> Nullam sagittis condimentum est quis malesuada. </a>
+                                    </li>
+                                    <li>
+                                        <span class="news-related-news-date">09/15/2015</span>
+                                        <a title="Nullam sagittis condimentum est quis malesuada." href="/content/plugins/news/article/nullam-sagittis-condimentum-est-quis-malesuada/"> Nullam sagittis condimentum est quis malesuada. </a>
+                                    </li>
                                 </ul>
                             </div>
                             <!-- FAL related files -->
@@ -81,12 +96,24 @@ externalLink: false #just add link (http://link.com) instead of "false" to use t
                                 <h4> Related files </h4>
                                 <ul>
                                     <li>
-                                        <span class="news-related-files-link"> <a href="" class="download-link basic-class jpg">temp-carousel-1.jpg</a> </span>
+                                        <span class="news-related-files-link">
+                                            <a href="/fileadmin/example_content/images/temp-carousel-1.jpg" class="download-link basic-class jpg"> temp-carousel-1.jpg </a>
+                                        </span>
                                         <span class="news-related-files-size"> 58 KB </span>
                                     </li>
                                 </ul>
                             </div>
+                            <!-- Related links -->
+                            <div class="news-related news-related-links">
+                                <h4> Related links </h4>
+                                <ul>
+                                    <li>
+                                        <a href="http://t3kit.com">t3kit.com</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

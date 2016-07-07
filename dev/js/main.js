@@ -9,6 +9,7 @@
 
 // plugins
 @import 'main/plugins/news/newsCarousel.js';
+@import 'main/plugins/news/news.js';
 
 @import 'main/suggest.js';
 
