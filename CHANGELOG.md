@@ -1,4 +1,15 @@
 
+#### v0.4.0 `July 8, 2016`
+- **[FIX]** alignment of image in news single view (Podio bug_22) ([51043cc](https://github.com/t3kit/felayout_bluemountain/commit/51043cc))
+- **[FIX]** related items position in News (Podio bug_23) ([349cbb6](https://github.com/t3kit/felayout_bluemountain/commit/349cbb6))
+- **[FEATURE]** add new list templates for News plugin, (cards, simplelist, timeline) ([c9ac1db](https://github.com/t3kit/felayout_bluemountain/commit/c9ac1db))
+- **[DOC]** add license file (Podio feature_24) ([c7fdcb0](https://github.com/t3kit/felayout_bluemountain/commit/c7fdcb0))
+- **[FEATURE]** add news-carousel template for NEWS extension ([b442edd](https://github.com/t3kit/felayout_bluemountain/commit/b442edd))
+- **[FIX]** add lightbox class for news detail page ([0deded7](https://github.com/t3kit/felayout_bluemountain/commit/0deded7))
+- **[FEATURE]** After clicking on mainNavigationSearchBtn, mainNavigationSearchBox is focused. (#3) ([876c521](https://github.com/t3kit/felayout_bluemountain/commit/876c521))
+
+***
+
 #### v0.3.0 `June 22, 2016`
 - **[FEATURE]** add bootstrap slider element ([ddeb12c](https://github.com/t3kit/felayout_bluemountain/commit/ddeb12c))
 - **[FIX]** modify colors (add variables) for search suggest dropdown ([cba07ac](https://github.com/t3kit/felayout_bluemountain/commit/cba07ac))
