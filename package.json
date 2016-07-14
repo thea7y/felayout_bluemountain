@@ -4,6 +4,11 @@
   "description": "Front-End layout for theme_t3kit_bluemountain project",
   "license": "MIT",
   "repository": "t3kit/felayout_bluemountain",
+  "scripts": {
+    "check": "grunt check",
+    "gruntDefault": "grunt dev",
+    "bower": "bower install"
+  },
   "devDependencies": {
     "autoprefixer": "6.3.7",
     "chalk": "1.1.3",

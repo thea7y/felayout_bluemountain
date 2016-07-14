@@ -1,0 +1,12 @@
+sudo: false
+language: node_js
+script:
+  - npm install bower
+  - npm run bower
+  - npm run gruntDefault
+  - npm run check
+node_js:
+  - v6
+branches:
+  only:
+    - master
