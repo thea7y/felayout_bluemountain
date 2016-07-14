@@ -1,6 +1,8 @@
 # felayout_bluemountain
 [![Release](https://img.shields.io/github/release/t3kit/felayout_bluemountain.svg?style=flat-square)](https://github.com/t3kit/felayout_bluemountain/releases)
 
+[![Build Status](https://travis-ci.org/t3kit/felayout_bluemountain.svg?branch=master)](https://travis-ci.org/t3kit/felayout_bluemountain)
+
 Front-End layout for [theme_t3kit_bluemountain](https://github.com/t3kit/theme_t3kit_bluemountain) project
 
 ### [CHANGELOG](https://github.com/t3kit/felayout_bluemountain/blob/master/CHANGELOG.md)
