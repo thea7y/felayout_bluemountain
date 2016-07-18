@@ -830,6 +830,8 @@
   visibility: visible;
   transition: opacity .3s 0s,visibility 0s 0s;
 }
+@media (min-width: 992px) {
+}
 @media (max-width: 991px) {
   .mobile-menu-opened,
   .mobile-menu-opened body {
