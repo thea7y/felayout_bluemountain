@@ -1,4 +1,17 @@
 
+#### v0.5.0 `July 18, 2016`
+- **[DOC]** add CONTRIBUTING.md file ([e73e384](https://github.com/t3kit/felayout_bluemountain/commit/e73e384))
+- **[DOC]** add Travis build status to readme file ([65bcb51](https://github.com/t3kit/felayout_bluemountain/commit/65bcb51))
+- **[FIX]** path for js-dotdotdot plugin ([917d330](https://github.com/t3kit/felayout_bluemountain/commit/917d330))
+- **[STYLE]** change code formatting ([3a339df](https://github.com/t3kit/felayout_bluemountain/commit/3a339df))
+- **[CHORE]** disable force option in jscs and jshint ([0b8efae](https://github.com/t3kit/felayout_bluemountain/commit/0b8efae))
+- **[UPDATE]** Bower dependencies ([fba12e9](https://github.com/t3kit/felayout_bluemountain/commit/fba12e9))
+- **[TEST]** add Travis CI integration ([c7da81b](https://github.com/t3kit/felayout_bluemountain/commit/c7da81b))
+- **[UPDATE]** package.json devDependencies ([374cd55](https://github.com/t3kit/felayout_bluemountain/commit/374cd55))
+- **[UPDATE]** update node.js (>=6.0.0) and npm (>=3.9.0) dependencies ([a3079fd](https://github.com/t3kit/felayout_bluemountain/commit/a3079fd))
+
+***
+
 #### v0.4.0 `July 8, 2016`
 - **[FIX]** alignment of image in news single view (Podio bug_22) ([51043cc](https://github.com/t3kit/felayout_bluemountain/commit/51043cc))
 - **[FIX]** related items position in News (Podio bug_23) ([349cbb6](https://github.com/t3kit/felayout_bluemountain/commit/349cbb6))
