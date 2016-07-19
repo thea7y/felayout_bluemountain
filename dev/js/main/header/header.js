@@ -2,6 +2,7 @@
 // Global variables (jshint):
 
 /*global touchSupport*/
+/*global isAndroid*/
 // =================================
 
 jQuery(function($) {
@@ -22,11 +23,13 @@ jQuery(function($) {
         if ($html.hasClass('mobile-menu-opened')) {
             $html.removeClass('mobile-menu-opened');
         }
-        if ($(window).width() < 992 && !$html.hasClass('mobile-menu-opened')) {
+
+        if (isAndroid && screen.width < 992 && !$html.hasClass('mobile-menu-opened')) {
+            $('.js__navigation__items-wrp').hide();
+        } else if (!isAndroid /* or with 'isIOS' variable instead of '!isAndroid' */ && $(window).width() < 992 && !$html.hasClass('mobile-menu-opened')) {
             $('.js__navigation__items-wrp').hide();
         } else {
             $('.js__navigation__items-wrp').show();
-
         }
     };
 
