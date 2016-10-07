@@ -1,8 +1,8 @@
 // =========================================================
 // === Big icon text btn ===================================
 // =========================================================
-.big-icon-text-btn__header {
-}
+// .big-icon-text-btn__header {
+// }
 
 .big-icon-text-btn {
     text-align: center;
@@ -11,6 +11,8 @@
 }
 
 .big-icon-text-btn__link {
+    position: relative;
+    z-index: 1;
 
     &:after {
         .icons();
@@ -39,6 +41,21 @@
     margin-bottom: 10px;
     font-size: 46px;
     display: inline-block;
+}
+
+.big-icon-text-btn__whole-area-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 0;
+    text-indent: -9999px;
+    z-index: 0;
+}
+
+.big-icon-text-btn._whole-area-link:hover .big-icon-text-btn__whole-area-link {
+    background-color: fade(#fff, 10%);
 }
 
 // =========================================================
