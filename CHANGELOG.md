@@ -1,4 +1,18 @@
 
+#### v0.6.0 `October 18, 2016`
+- **[STYLE]** fix js formatting ([3ab4879](https://github.com/t3kit/felayout_bluemountain/commit/3ab4879))
+- **[FIX]** multiple news carousels (swiper) (Podio bug_42) (#7) ([4685c3f](https://github.com/t3kit/felayout_bluemountain/commit/4685c3f))
+- **[FEATURE]** Whole area link (#11) ([9e5d53d](https://github.com/t3kit/felayout_bluemountain/commit/9e5d53d))
+- **[FIX]** Print styles (Podio bug_54) (#12) ([b82bd02](https://github.com/t3kit/felayout_bluemountain/commit/b82bd02))
+- **[FIX]** wrong class for pagination in solr (Podio bug_45) (#10) ([7981ec2](https://github.com/t3kit/felayout_bluemountain/commit/7981ec2))
+- **[FEATURE]** DropdownMenu with columns ([e594088](https://github.com/t3kit/felayout_bluemountain/commit/e594088))
+- **[FIX]** use search-button variable also in header top (Podio bug_26) ([4941517](https://github.com/t3kit/felayout_bluemountain/commit/4941517))
+- **[FIX]** set the same color in both states of search-button (Podio bug_26) (#5) ([c2e7267](https://github.com/t3kit/felayout_bluemountain/commit/c2e7267))
+- **[FIX]** Main navigation disappears after change of screen rotation (Podio bug_33) ([6adccd8](https://github.com/t3kit/felayout_bluemountain/commit/6adccd8))
+- **[FEATURE]** Android/iOS detection ([77cf3e2](https://github.com/t3kit/felayout_bluemountain/commit/77cf3e2))
+
+***
+
 #### v0.5.0 `July 18, 2016`
 - **[DOC]** add CONTRIBUTING.md file ([e73e384](https://github.com/t3kit/felayout_bluemountain/commit/e73e384))
 - **[DOC]** add Travis build status to readme file ([65bcb51](https://github.com/t3kit/felayout_bluemountain/commit/65bcb51))
