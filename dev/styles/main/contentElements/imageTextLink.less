@@ -1,19 +1,18 @@
 // =========================================================
 // === Image text link =====================================
 // =========================================================
+.img-text-link__wrp{
+    position: relative;
+    overflow: auto;
+    padding: 0 15px;
+    margin: 0 -15px; 
+}
 .img-text-link {
-    // margin: 20px 0;
     padding: 40px 0;
     padding-top: 50px;
 }
-
-// .img-text-link__header {
-//     // text-transform: uppercase;
-// }
-
 .img-text-link__img-link {
     position: relative;
-    // display: inline-block;
     display: block;
     z-index: 1;
 
@@ -55,7 +54,7 @@
             opacity: 0.5;
             visibility: visible;
         }
-        
+
         &:before {
             opacity: 1;
             visibility: visible;
@@ -68,18 +67,24 @@
     z-index: 1;
 }
 
-.img-text-link__whole-area-link {
+.img-text-link__sham-link{
+    color: @main-color;
+}
+
+.img-text-link._whole-area-link .img-text-link__link{
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     font-size: 0;
+    border: none;
+    background: transparent;
     text-indent: -9999px;
-    z-index: 0;
+    z-index: 2;
 }
 
-.img-text-link._whole-area-link:hover .img-text-link__whole-area-link {
+.img-text-link._whole-area-link:hover .img-text-link__link {
     background-color: fade(#fff, 10%);
 }
 
