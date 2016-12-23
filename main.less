@@ -1313,7 +1313,9 @@
 // ===== t3kit element icons =====
 .icon-t3-quoteMark:before {content: "\e0de";} // quote
 .icon-text-btn__link:after {content: "\e91c";} // leftIconTextButton
+.icon-text-btn__sham-link:after {content: "\e91c";} // leftIconTextButton
 .big-icon-text-btn__link:after {content: "\e91c";} // bigIconTextButton
+.big-icon-text-btn__sham-link:after {content: "\e91c";} // bigIconTextButton
 .img-text-link__img-link:before {content: "\e943";} // imageTextLink
 .logo-carousel__btn-next:before{content: '\e91d';} // logo carousel next
 .logo-carousel__btn-prev:before{content: '\e91b';} // logo carousel previous
@@ -3256,6 +3258,7 @@
 // =================================
 .footer__subscribe .alert{
     width: 66%;
+    clear: both;
 }
 
 .footer__subscribe .form-control {
@@ -4262,6 +4265,11 @@
 .search-result-pagination {
     margin-top: 20px;
 }
+
+.search-result-pagination:last-child {
+    margin-bottom: 20px;
+}
+
 .search-result-pagination .btn-default {
     background: darken(@main-body-bg, 10%);
     color: @main-text-color;
@@ -4527,9 +4535,13 @@
 // =========================================================
 // === Big icon text btn ===================================
 // =========================================================
-// .big-icon-text-btn__header {
-// }
 
+.big-icon-text-btn__wrp{
+    position: relative;
+    overflow: auto;
+    padding: 0 15px;
+    margin: 0 -15px;
+}
 .big-icon-text-btn {
     text-align: center;
     padding: 40px 0;
@@ -4542,7 +4554,6 @@
 
     &:after {
         .icons();
-        // content: '\e675';
         position: relative;
         display: inline-block;
         font-size: 20px;
@@ -4569,7 +4580,20 @@
     display: inline-block;
 }
 
-.big-icon-text-btn__whole-area-link {
+.big-icon-text-btn__sham-link{
+    color: @main-color;
+    &:after {
+        .icons();
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 8px;
+        padding: 0 3px;
+        top: 1px;
+    }
+}
+
+.big-icon-text-btn._whole-area-link .big-icon-text-btn__link {
     position: absolute;
     top: 0;
     left: 0;
@@ -4577,10 +4601,12 @@
     right: 0;
     font-size: 0;
     text-indent: -9999px;
-    z-index: 0;
+    border:none;
+    background: transparent;
+    z-index: 1;
 }
 
-.big-icon-text-btn._whole-area-link:hover .big-icon-text-btn__whole-area-link {
+.big-icon-text-btn._whole-area-link:hover .big-icon-text-btn__link {
     background-color: fade(#fff, 10%);
 }
 
@@ -4590,6 +4616,12 @@
 // =========================================================
 // === Icon text btn ======================================+
 // =========================================================
+.icon-text-btn__wrp{
+    position: relative;
+    overflow: auto;
+    padding: 0 15px;
+    margin: 0 -15px;
+}
 .icon-text-btn__icon {
     padding: 10px;
     border: 2px solid tint(@main-color, 70%);
@@ -4604,10 +4636,6 @@
     float: right;
 }
 
-// .icon-text-btn__header {
-
-// }
-
 .icon-text-btn {
     padding: 40px 0;
     padding-top: 20px;
@@ -4616,10 +4644,8 @@
 .icon-text-btn__link {
     position: relative;
     z-index: 1;
-
     &:after {
         .icons();
-        // content: '\e675';
         position: relative;
         display: inline-block;
         font-size: 20px;
@@ -4627,14 +4653,26 @@
         padding: 0 3px;
         top: 1px;
     }
-
 }
 
 .icon-text-btn__p {
     margin-bottom: 18px;
 }
 
-.icon-text-btn__whole-area-link {
+.icon-text-btn__sham-link{
+    color: @main-color;
+    &:after {
+        .icons();
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 8px;
+        padding: 0 3px;
+        top: 1px;
+    }
+}
+
+.icon-text-btn._whole-area-link .icon-text-btn__link{
     position: absolute;
     top: 0;
     left: 0;
@@ -4642,10 +4680,12 @@
     right: 0;
     font-size: 0;
     text-indent: -9999px;
-    z-index: 0;
+    background: transparent;
+    border: none;
+    z-index: 2;
 }
 
-.icon-text-btn._whole-area-link:hover .icon-text-btn__whole-area-link {
+.icon-text-btn._whole-area-link:hover .icon-text-btn__link {
     background-color: fade(#fff, 10%);
 }
 
@@ -4655,19 +4695,18 @@
 // =========================================================
 // === Image text link =====================================
 // =========================================================
+.img-text-link__wrp{
+    position: relative;
+    overflow: auto;
+    padding: 0 15px;
+    margin: 0 -15px; 
+}
 .img-text-link {
-    // margin: 20px 0;
     padding: 40px 0;
     padding-top: 50px;
 }
-
-// .img-text-link__header {
-//     // text-transform: uppercase;
-// }
-
 .img-text-link__img-link {
     position: relative;
-    // display: inline-block;
     display: block;
     z-index: 1;
 
@@ -4709,7 +4748,7 @@
             opacity: 0.5;
             visibility: visible;
         }
-        
+
         &:before {
             opacity: 1;
             visibility: visible;
@@ -4722,18 +4761,24 @@
     z-index: 1;
 }
 
-.img-text-link__whole-area-link {
+.img-text-link__sham-link{
+    color: @main-color;
+}
+
+.img-text-link._whole-area-link .img-text-link__link{
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     font-size: 0;
+    border: none;
+    background: transparent;
     text-indent: -9999px;
-    z-index: 0;
+    z-index: 2;
 }
 
-.img-text-link._whole-area-link:hover .img-text-link__whole-area-link {
+.img-text-link._whole-area-link:hover .img-text-link__link {
     background-color: fade(#fff, 10%);
 }
 
@@ -5219,6 +5264,18 @@
     border-color: tint(@main-color, 50%);
 }
 
+.blue-mountain-wrp .big-icon-text-btn__sham-link{
+    color: tint(@main-color, 90%);
+}
+
+.blue-mountain-wrp .icon-text-btn__sham-link{
+    color: tint(@main-color, 90%);
+}
+
+.blue-mountain-wrp .img-text-link__sham-link{
+    color: tint(@main-color, 90%);
+}
+
 .blue-mountain-header {
     h2 {
         font-size: 48px;
@@ -5284,6 +5341,11 @@
     // background: saturate(spin(@main-color, 177), 30%);
     // border-color: transparent;
     }
+}
+
+
+.inverse .big-icon-text-btn__sham-link{
+    color: tint(@main-color, 90%);
 }
 
 .saturated-inverse a {
@@ -5418,7 +5480,15 @@
                         color: tint(@main-color, 90%);
                         border-color: tint(@main-color, 50%);
                     }
-
+                    .big-icon-text-btn__sham-link{
+                        color: tint(@main-color, 90%);
+                    }
+                    .icon-text-btn__sham-link{
+                        color: tint(@main-color, 90%);
+                    }
+                    .img-text-link__sham-link{
+                        color: tint(@main-color, 90%);
+                    }
                 }
                 &:nth-child(even) {
                     background-color: @main-body-bg;
@@ -5466,6 +5536,15 @@
                         color: tint(@main-color, 90%);
                         border-color: tint(@main-color, 50%);
                     }
+                    .big-icon-text-btn__sham-link{
+                        color: tint(@main-color, 90%);
+                    }
+                    .icon-text-btn__sham-link{
+                        color: tint(@main-color, 90%);
+                    }
+                    .img-text-link__sham-link{
+                        color: tint(@main-color, 90%);
+                    }
                 }
             }
         }
@@ -5473,6 +5552,21 @@
 
 
 .mosaic-blue-mountain-even .row > div, .mosaic-blue-mountain-odd .row > div {
+    padding: 0 30px;
+}
+
+.mosaic-blue-mountain-even .row > div .big-icon-text-btn__wrp, .mosaic-blue-mountain-odd .row > div .big-icon-text-btn__wrp{
+    margin: 0 -30px;
+    padding: 0 30px;
+}
+
+.mosaic-blue-mountain-even .row > div .icon-text-btn__wrp, .mosaic-blue-mountain-odd .row > div .icon-text-btn__wrp{
+    margin: 0 -30px;
+    padding: 0 30px;
+}
+
+.mosaic-blue-mountain-even .row > div .img-text-link__wrp, .mosaic-blue-mountain-odd .row > div .img-text-link__wrp{
+    margin: 0 -30px;
     padding: 0 30px;
 }
 
