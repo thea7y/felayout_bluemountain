@@ -5879,6 +5879,19 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+}
+
+.img-slider__caption._left-align{
+    text-align: left;
+}
+
+.img-slider__caption._center-align{
+    text-align: center;
+}
+
+.img-slider__caption._right-align{
+    text-align: right;
 }
 
 .img-slider__caption-sub-header{
@@ -7079,6 +7092,15 @@
     display: block;
     height: auto;
     max-width: 100%;
+}
+
+.ce-media iframe{
+	display: block;
+	max-width: 100%;
+}
+
+.ie11 .ce-gallery img{
+    max-width: calc(~"100vw - 30px");
 }
 
 @media (max-width: 767px) {
