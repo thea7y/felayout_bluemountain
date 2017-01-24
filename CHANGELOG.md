@@ -1,4 +1,26 @@
 
+#### v1.0.0 `January 24, 2017`
+- **[FIX]** remove css lint grunt check, fix CI tests ([055ff5f](https://github.com/t3kit/felayout_bluemountain/commit/055ff5f))
+- **[BUGFIX]** fix aligning of news pagination and news tags while text is short ([931b94f](https://github.com/t3kit/felayout_bluemountain/commit/931b94f))
+- **[FEATURE]** Added 6-7 levels for submenu (Podio feature_28) (#38) ([3a2379a](https://github.com/t3kit/felayout_bluemountain/commit/3a2379a))
+- **[FEATURE]** Add third menu-level for main navigation ([836e2b2](https://github.com/t3kit/felayout_bluemountain/commit/836e2b2))
+- **[FEATURE]** add new element Simple accordion (Podio feature_34) (#37) ([6d4e32f](https://github.com/t3kit/felayout_bluemountain/commit/6d4e32f))
+- **[FEATURE]** add styles for customizing search-text (Podio feature_32) (#36) ([d7e8f75](https://github.com/t3kit/felayout_bluemountain/commit/d7e8f75))
+- **[FIX]** add styles for responsive video (Podio bug_60) (#33) ([69bca51](https://github.com/t3kit/felayout_bluemountain/commit/69bca51))
+- **[FEATURE]** slider element, add styles for caption alignment (Podio feature_63) (#32) ([a42fc68](https://github.com/t3kit/felayout_bluemountain/commit/a42fc68))
+- **[BUGFIX]** fix image scale on ie11, (Podio bug_47) (#31) ([0417793](https://github.com/t3kit/felayout_bluemountain/commit/0417793))
+- **[FEATURE]** imageTextLink, add 9 hover effects (animatons) (#29) ([8ec5c09](https://github.com/t3kit/felayout_bluemountain/commit/8ec5c09))
+- **[BUGFIX]** Fixed menu looks buggy when scrolling (Podio bug_25) ([0c26b4b](https://github.com/t3kit/felayout_bluemountain/commit/0c26b4b))
+- **[FIX]** newsCarousel, fix validation issue (<p> inside of <span> tag)  (#30) ([cea8c94](https://github.com/t3kit/felayout_bluemountain/commit/cea8c94))
+- **[FIX]** newsletter subscription error message (Podio bug_31) (#27) ([0e90769](https://github.com/t3kit/felayout_bluemountain/commit/0e90769))
+- **[BUGFIX]** no space between pagination and footer on search page (Podio bug_35) (#28) ([2481d07](https://github.com/t3kit/felayout_bluemountain/commit/2481d07))
+- **[FEATURE]** add new grid element 'slider container' (Podio Feature_61) (#17) ([c3a942c](https://github.com/t3kit/felayout_bluemountain/commit/c3a942c))
+- **[FIX]** fix for making the page not scroll to top when opening the menu (Podio bug_71) ([18b9f29](https://github.com/t3kit/felayout_bluemountain/commit/18b9f29))
+- **[FEATURE]** Make the slider autoslide (Podio Feature_41) (#18) ([1fdccea](https://github.com/t3kit/felayout_bluemountain/commit/1fdccea))
+- **[TASK]** update favicons ([eafaad6](https://github.com/t3kit/felayout_bluemountain/commit/eafaad6))
+
+***
+
 #### v0.6.0 `October 18, 2016`
 - **[STYLE]** fix js formatting ([3ab4879](https://github.com/t3kit/felayout_bluemountain/commit/3ab4879))
 - **[FIX]** multiple news carousels (swiper) (Podio bug_42) (#7) ([4685c3f](https://github.com/t3kit/felayout_bluemountain/commit/4685c3f))
